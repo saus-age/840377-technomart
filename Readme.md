@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Сергей Епифанов](https://up.htmlacademy.ru/htmlcss/23/user/840377).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
 
 ---
 
