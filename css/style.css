@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;}
+
+.header-top {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.header-top a {
+	color: #ffffff;
+}
+
+.header-top a:hover {
+	background-color: #212a3a;
+}
+
+
+.header-top a:active {
+	background-color: #161d29;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+	background-color: #ba2732;
+}
+
+.order {
+  background-color: #63a63e;
+}
+
+.header-top .order a:hover {
+	background-color: #5fbb2d;
+}
+
+.header-top .order a:active {
+	background-color: #518534;
+
+}
+
+.header-top input {
+	background-color: #293449;
+}
+
+.search-form a:hover,
+.search-form input:hover {
+	background-color: #212a3a;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+}
+
+
+.description {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phone-number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-block {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-menu {
+	color: #ffffff;
+	background-color: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
+}
+
+.main-menu li:hover {
+	background-color: #293449;
+}
+
+.main-menu li:active {
+	background-color: #1d2739;
+}
+
+li {
+	list-style: none;
+}
+
+.main-menu-list a {
+	color: #ffffff;
+}
+
+.user-block a {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.user-block a:hover {
+	color: #ee3643;
+}
+
+.user-block a:active {
+	color: #32425c;
+}
+
+.user-block a:active {
+	color: #c5c5c5;
+}
+
+.user-orders,
+.user-account {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #32425c;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.main-btn {
+	color: #ffffff;
+	background: #ee3643;
+	text-transform:uppercase;
+}
+
+.main-btn:hover {
+	background: #ca2c37;
+}
+
+.main-btn:active {
+	background: #ba2732;
+}
+
+.footer-logo {
+  color: #ffffff;
+}
+
+.footer-top {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #f4f7f9;
+  background-color: #32425c;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-address {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f8;
+}
+
+.footer-nav .footer-nav-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer-nav .footer-nav-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav .footer-nav-item a:active {
+	opacity: 0.5;
+}
+
+.footer-catalog .footer-catalog-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.footer-catalog .footer-catalog-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-catalog .footer-catalog-item a:active {
+	opacity: 0.5;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.feedback {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.feedback a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+.developer {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.developer a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+.feedback a:hover,
+.developer a:hover {
+	text-decoration: underline;
+}
+
+.feedback a:active,
+.developer a:active {
+	color: #ee3643;
+}
+
+.item-price {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	background: #ee3643;
+}
+
+.old-price {
+	font-family: PT Sans, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: line-through;
+}
+
+.btn-buy {
+	background: #63a63e;
+	box-shadow: inset 0 -30px 0px -25px #367315;
+	text-transform:uppercase;
+}
+
+.btn-buy:hover {
+	background: #5fbb2d;
+}
+
+.btn-buy:active {
+	background: #518534;
+	box-shadow: none;
+}
+
+.btn-bookmark {
+	color: #32425c;
+	border: 3px solid #63a63e;
+	text-transform:uppercase;
+}
+
+.btn-bookmark:hover {
+	border: 3px solid #32425c;
+ }
+
+ .btn-bookmark:active {
+ 	opacity:0.3;
+ }
