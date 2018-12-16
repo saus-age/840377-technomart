@@ -1,7 +1,7 @@
 body {
   margin: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum",  sans-serif;
   font-size: 17px;
   line-height: 17px;
   font-weight: 400;
@@ -9,12 +9,31 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .header-top {
   background-color: #293449;
   color: #ffffff;
+  width: 100%;
+  height: 42px;
 }
 
 .header-top a {
@@ -25,29 +44,97 @@ a {
 	background-color: #212a3a;
 }
 
-
 .header-top a:active {
 	background-color: #161d29;
 }
 
-.logo {
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header-top .container {
+  display: flex;
+}
+
+.header-top .header-logo {
+  display: block;
+  background-color: #ee3643;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  background-color: #ee3643;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 9px 0px;
+  width: 220px;
+  height: 42px;
   box-shadow: 0 5px 0 0 #b52933;
 }
 
-.logo:hover {
+.header-top .header-logo:hover {
   background-color: #ca2c37;
 }
 
-.logo:active {
+.header-top .header-logo:active {
 	background-color: #ba2732;
+}
+
+.header-top input {
+	background-color: #293449;
+  margin-left: 50px;
+  border: none;
+}
+
+.search-box {
+  width: 270px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 0 12px 49px;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #000000;
+  background-color: #293449;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.search-form input:hover {
+	background-color: #212a3a;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+  outline: none;
+}
+
+.header-top .order-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 450px;
+}
+
+.bookmarks {
+  width: 105px;
+  padding-left: 45px;
+  padding-top: 12px;
+}
+
+.basket {
+  padding-top: 12px;
 }
 
 .order {
   background-color: #63a63e;
+  width: 150px;
+  padding-top: 12px;
 }
 
 .header-top .order a:hover {
@@ -56,52 +143,158 @@ a {
 
 .header-top .order a:active {
 	background-color: #518534;
-
 }
 
-.header-top input {
-	background-color: #293449;
+.header-bottom {
+  /*display: flex;*/
+  width: 100%;
+  background-color: #f3f7f9;
 }
 
-.search-form a:hover,
-.search-form input:hover {
-	background-color: #212a3a;
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
-
-.search-form input:focus {
-	background-color: #ffffff;
-}
-
 
 .description {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  font-style: italic;
+  padding-top: 40px;
+}
+
+.contacts {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .phone-number {
   font-size: 21px;
-  line-height: 21px;
   color: #ee3643;
+  line-height: 21px;
+  text-align: center;
+  border: 4px solid #ffffff;
+  padding: 10px;
+  width: 245px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.phone-number::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-phone.svg);
+  top: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 15px;
+  width: 19px;
+  height: 19px;
+  opacity: 1;
 }
 
 .address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  padding-left: 10px;
 }
 
 .user-block {
   font-size: 21px;
   line-height: 21px;
-  background-color: #ffffff;
-  color: #000000;
+  text-align: center;
+  width: 282px;
+  display: flex;
+  align-items: center;
 }
 
-.main-menu {
+.login {
+  width: 121px;
+  padding: 15px 25px 14px 46px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login:hover::before {
+  background-image: url(../img/icon-login1.png);
+}
+
+.login:hover {
+  color: #ee3643;
+}
+
+.login:active {
+ color: #b2b2b2;
+}
+
+.registration {
+  color: #32425c;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  width: 150px;
+  padding: 13px 25px 13px 23px;
+}
+
+.registration:hover {
+  color: #ee3643;
+}
+
+.registration:active {
+ color: #b2b2b2;
+}
+
+
+
+
+
+
+
+.main-menu-list {
 	color: #ffffff;
 	background-color: #32425c;
   box-shadow: 0 5px 0 0 #293449;
+  display: flex;
+  justify-content: space-between;
+  min-height: 55px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-menu-item {
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 19px 30px;
+  cursor: pointer;
+  vertical-align: middle;
+  list-style-type: none;
 }
 
 .main-menu li:hover {
@@ -146,7 +339,6 @@ li {
   font-weight: normal;
   color: #32425c;
   text-decoration: underline;
-  color: #32425c;
 }
 
 .main-btn {
@@ -163,8 +355,43 @@ li {
 	background: #ba2732;
 }
 
+.wrapper {
+  display:flex;
+  flex-direction: column;
+}
+
+.manufacturers {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  width: 220px;
+  height: 40px;
   color: #ffffff;
+}
+
+.footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.footer-logo:active {
+	background-color: #ba2732;
 }
 
 .footer-top {
@@ -173,10 +400,32 @@ li {
   font-weight: normal;
   color: #f4f7f9;
   background-color: #32425c;
+  display: flex;
+ 	justify-content: space-between;
+  width: 100%;
+}
+
+.footer-top-left {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+}
+
+.footer-top-right {
+  display: flex;
+ 	flex-direction: column;
+}
+
+.footer-middle {
+  background-color: #293449;
+  display: flex;
+ 	justify-content: space-between;
+  width: 100%;
 }
 
 .footer-bottom {
   background-color: #293449;
+  width: 100%;
 }
 
 .footer-address {
@@ -213,16 +462,27 @@ li {
 	opacity: 0.5;
 }
 
+.footer-nav,
+.footer-catalog {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
 .copyright {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  width: 260px;
+  width: 150px;
 }
 
 .feedback {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  width: 150px;
 }
 
 .feedback a {
@@ -271,6 +531,29 @@ li {
 	text-decoration: line-through;
 }
 
+.wrapper {
+  display: flex;
+	justify-content: space-between;
+}
+
+.catalog-items {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+ 	margin: 0;
+	list-style: none;
+}
+
+.item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.pagination-list {
+	display: flex;
+}
+
 .btn-buy {
 	background: #63a63e;
 	box-shadow: inset 0 -30px 0px -25px #367315;
@@ -296,6 +579,40 @@ li {
 	border: 3px solid #32425c;
  }
 
- .btn-bookmark:active {
+.btn-bookmark:active {
  	opacity:0.3;
  }
+
+/*.social-vkontakte::before {
+ content: "";
+ position: absolute;
+ top: 14px;
+ left: 7px;
+ width: 26px;
+ height: 15px;
+ background-image: url("img/icon-vk.svg") no-repeat;
+ width: 100%;
+}
+
+.social-facebook::before {
+ content: "";
+ position: absolute;
+ top: 10px;
+ left: 14px;
+ width: 12px;
+ height: 22px;
+ background-image: url(../img/icon-phone.svg);
+ /*background: url("img/icon-fb.svg") no-repeat;
+ width: 100%;
+}
+
+.social-instagram::before {
+ content: "";
+ position: absolute;
+ top: 10px;
+ left: 11px;
+ width: 21px;
+ height: 21px;
+ background: url("img/icon-insta.svg") no-repeat;
+ width: 100%;
+}*/

@@ -3,30 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="header-top">
-          <a href="#" class="logo">Техномарт</a>
-          <form class="search-form">
-            <label class="visually-hidden" for="search">
-              Поле поиска
-            </label>
-            <input id="search" type="search" placeholder="Поиск:">
-          </form>
-          <a href="#" class="bookmarks">Закладки:0</a>
-          <a href="#" class="basket">Корзина:10</a>
-          <a href="#" class="order">Оформить заказ:</a>
-      </div>
-        <div class="header-bottom">
-          <div class="description">
-            Интерет-магазин<br>
-            строительных материалов<br>
-            и инструментов для ремонта
+        <div class="container">
+          <a href="#" class="header-logo" aria-label="Логотип компании Техномарт">Техномарт</a>
+            <div class="search-box">
+              <form class="search-form">
+                <label class="visually-hidden" for="search">
+                  Поле поиска
+                </label>
+                <input id="search" type="search" placeholder="Поиск:">
+              </form>
+            </div>
+              <div class="order-menu">
+                <a href="#" class="bookmarks">Закладки:0</a>
+                <a href="#" class="basket">Корзина:10</a>
+                <a href="#" class="order">Оформить заказ:</a>
+              </div>
+            </div>
           </div>
+        <div class="header-bottom">
+          <div class="header-middle container">
+            <div class="description">
+              Интерет-магазин<br>
+              строительных материалов<br>
+              и инструментов для ремонта
+            </div>
           <div class="contacts">
             <div class="phone-number">+7 (812) 555-05-55</div>
             <div class="address">г. Санкт-Петербург, улю Б. Кобшенная,д 19/8</div>
@@ -42,8 +49,9 @@
               <a href="#" class="user-orders">Мои заказы</a>
               <a href="#" class="user-account">Личный кабинет</a>
           </div>
+        </div>
           <nav class="main-menu">
-            <ul class="main-menu-list">
+            <ul class="main-menu-list container">
               <li class="main-menu-item"><a href="index.html" class="main-menu-link">Главная</a></li>
               <li class="main-menu-item"><a href="#" class="main-menu-link">Компния</a></li>
               <li class="main-menu-item"><a href="catalog.html" class="main-menu-link">Каталог</a></li>
@@ -237,51 +245,55 @@
       <a href="#">Продолжить покупки</a>
     </section>
     <footer class="main-footer">
-        <div class="footer-top">
-              <div class="footer-top-left">
-                <a class="logo footer-logo" href="#">Техномарт</a>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top-left">
+            <a class="footer-logo" href="#">Техномарт</a>
               <div class="footer-address">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                 +7 (812) 555-05-55
               </div>
             </div>
             <div class="footer-top-right">
-            <ul class="footer-nav">
-              <li class="footer-nav-item"><a href="#" class="footer-nav-link">Компания</a></li>
-              <li class="footer-nav-item"><a href="#" class="footer-nav-link">Новости</a></li>
-              <li class="footer-nav-item"><a href="catalog.html" class="footer-nav-link">Каталог</a></li>
-              <li class="footer-nav-item"><a href="#" class="footer-nav-link">Доставка</a></li>
-              <li class="footer-nav-item"><a href="#" class="footer-nav-link">Контакты</a></li>
-            </ul>
-            <ul class="footer-catalog">
+              <ul class="footer-nav">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Компания</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Новости</a></li>
+                <li class="footer-nav-item"><a href="catalog.html" class="footer-nav-link">Каталог</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Доставка</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Контакты</a></li>
+              </ul>
+              <ul class="footer-catalog">
                 <li class="footer-catalog-item"><a href="#" class="footer-catalog-link">Материалы</a></li>
                 <li class="footer-catalog-item"><a href="#" class="footer-catalog-link">Техника</a></li>
                 <li class="footer-catalog-item"><a href="#" class="footer-catalog-link">Инструмент</a></li>
                 <li class="footer-catalog-item"><a href="#" class="footer-catalog-link">Спецпредложения</a></li>
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="copyright">
-            2010–2016 Компания «Техномарт»<br>
-            Все права защищены
-          </div>
-          <div class="social">
-            <a class="social-icon  social-vkontakte" href="#">Вконтакте</a>
-            <a class="social-icon social-facebook" href="#">Фейсбук</a>
-            <a class="social-icon social-instagram" href="#">Инстаграм</a>
-          </div>
-          <div class="information">
-            <div class="feedback">
-              Обратная связь:<br>
-              <a href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+          <div class="container">
+            <div class="copyright">
+              2010–2016 Компания «Техномарт»<br>
+              Все права защищены
             </div>
-          <div class="developer">
-              Разработано -<br>
-              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
-          </div>
+            <div class="social">
+              <a class="social-icon  social-vkontakte" href="#">Вконтакте</a>
+              <a class="social-icon social-facebook" href="#">Фейсбук</a>
+              <a class="social-icon social-instagram" href="#">Инстаграм</a>
+            </div>
+            <div class="information">
+              <div class="feedback">
+                Обратная связь:<br>
+                <a href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+              <div class="developer">
+                  Разработано -<br>
+                <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              </div>
+            </div>
           </div>
         </div>
-    </footer>
-</body>
+      </footer>
+  </body>
 </html>
